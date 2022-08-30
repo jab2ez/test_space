@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Color from './components/Color/Color';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Color
+        text='blue'
+        color='blue'
+        textColor='#fff'
+      />
+      <Color
+        text='green'
+        color='green'
+        textColor='#bbb'
+      />
+      <Color
+        text='orange'
+        color='orange'
+        textColor='#000'
+      />
     </div>
   );
 }
